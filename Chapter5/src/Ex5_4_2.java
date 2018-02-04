@@ -1,7 +1,7 @@
 /**
  * Created by wwf12 on 2018-01-30.
  */
-public class Ex_5_4_2 {
+public class Ex5_4_2 {
     public static void main(String[] args) {
         int n=0;
 
