@@ -17,7 +17,6 @@ public class Ex6_2_2 {
             if(num%i == 0)
                 return false;
         }
-
         return true;
     }
 }
