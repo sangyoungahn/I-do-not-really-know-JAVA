@@ -25,11 +25,16 @@ class FruitSeller_ {
 }
 
 class FruitBuyer_ {
-    int myMoney=5000;
-    int numOfApple=0;
+    int myMoney;
+    int numOfApple;
 
-    public void buyApple(FruitSeller seller, int money) {
-        numOfApple += seller.saleApple(myMoney);
+    public FruitBuyer_(int money) {
+        myMoney=money;
+        numOfApple=0;
+    }
+
+    public void buyApple(FruitSeller_ seller, int money) {
+        numOfApple += seller.saleApple(money);
         myMoney -= money;
     }
     public void showBuyResult() {
@@ -43,7 +48,7 @@ public class FruitSalesMain3 {
         FruitSeller_ seller1 = new FruitSeller_(0, 30, 1500);
         FruitSeller_ seller2 = new FruitSeller_(0, 20, 1000);
 
-        FruitBuyer_ buyer = new FruitBuyer_();
+        FruitBuyer_ buyer = new FruitBuyer_(10000);
         buyer.buyApple(seller1, 4500);
         buyer.buyApple(seller2, 2000);
 
