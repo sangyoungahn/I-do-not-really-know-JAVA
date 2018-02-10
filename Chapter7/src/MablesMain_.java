@@ -19,7 +19,7 @@ class ChildProperty_ {
             numOfBead=0;
             return retValue;
         }
-        
+
         numOfBead -= loseCount;
         return loseCount;
     }
